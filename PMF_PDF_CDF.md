@@ -83,7 +83,7 @@ P(50 < X < 60). P(a < X < b) is represented by the area under the PDF curve betw
 
 Let us compare side by side *PMF* and *PDF*.
 
-![](python_images\pmf.png)      ![](python_images\pdf.png)
+![](python_images/pmf.png)      ![](python_images/pdf.png)
 
 Can we see one important thing here? For PDF, we do not have probability along the y-axis, it is **probability density**. Because continuous values can take infinitely many values within an interval, we cannot find the probability at a point we must look for the density around it therefore we ended up taking **probability density** along y-axis. To find the probability we must find the shaded area under the graph. Taller part of the curve means - Values around this region are relatively more concentrated and lower part means - Values around this region are relatively less concentrated. 
 
@@ -108,25 +108,25 @@ The same goes for the PDF as well, the CDF represents the total area under the P
 
 And that is why the **CDF works for both discrete and continuous random variables.**
 
-![](python_images\cdf_pmf.png)      ![](python_images\cdf_pdf.png)
+![](python_images/cdf_pmf.png)      ![](python_images/cdf_pdf.png)
 
 Here we can see how the cumulative probability reaches 1 in both cases.
 
-![](other_images\summary.png)
+![](other_images/summary.png)
 
 Here are the mathematical formulations to remember:
 
 **Probability Mass Function (PMF)** :
 
-![](other_images\pmf_formula.png)
+![](other_images/pmf_formula.png)
 
 **Probability Density Function** :
 
-![](other_images\pdf_formula.png)
+![](other_images/pdf_formula.png)
 
 **Cumulative Distribution Function** :
 
-![](other_images\cdf_formula.png)
+![](other_images/cdf_formula.png)
 
 
                                               DISCRETE
@@ -161,10 +161,10 @@ Using this data:
 
 --> X ∈ {0,1,2,3,4,5}
 
-![](other_images\sol1.png)
+![](other_images/sol1.png)
 
 1. Exactly 2 tickets
-$$ P(X=2)=\boxed{0.333} $$
+P(X=2) = 0.333
 
 So approximately 33.3% of customers raised exactly 2 tickets.
 
@@ -176,7 +176,7 @@ $$ X\leq2 $$
 
 Therefore:
 
-$$ P(X\leq2)=P(0)+P(1)+P(2) $$ $$ =0.10+0.20+0.333 $$ $$ \boxed{P(X\leq2)\approx0.633} $$
+$$ P(X\leq2) = P(0)+P(1)+P(2) $$ $$ =0.10+0.20+0.333 $$ $$ {P(X\leq2)\approx0.633} $$
 3. More than 3 tickets
 
 "More than 3" means:
@@ -194,7 +194,7 @@ Q2. A company analyzes the time customers spend on its website. Let the continuo
 
 Suppose the probability density function is estimated as:
 
-![](other_images\Q2.png)
+![](other_images/Q2.png)
 Questions:
    1. Verify whether this is a valid PDF.
    2. Find the probability that a randomly selected customer spends between 1 and 3 minutes on the website:
@@ -209,25 +209,25 @@ $$ \int_{-\infty}^{\infty}f(x)\,dx=1 $$
 
 Since the PDF is non-zero only from \(0\) to \(4\):
 
-![](other_images\q2_1.png)
+![](other_images/q2_1.png)
 
 Therefore, this is a valid PDF.
 
 2️. For a continuous variable, we calculate probability using the area under the curve:
 
-![](other_images\q2_2.png)
+![](other_images/q2_2.png)
 
 So there is a 50% probability that a customer spends between 1 and 3 minutes on the website.
 
 3️. Probability of spending less than 2 minutes
 
-![](other_images\q2_3.png)
+![](other_images/q2_3.png)
 
 So there is a 25% probability that a customer spends less than 2 minutes on the website.
 
 4️. Probability of spending more than 3 minutes
 
-![](other_images\q2_4.png)
+![](other_images/q2_4.png)
 
 So there is a 43.75% probability that a customer spends more than 3 minutes on the website.
 
